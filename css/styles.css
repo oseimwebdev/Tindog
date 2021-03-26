@@ -1,0 +1,209 @@
+body {
+  font-family: 'montserrat', sans-serif;
+  text-align: center; /* Refactoring, by putting this here in the body, this allows the who website to be text aligned instead of me putting text-align in the individual headings, ids, and classes etc... Video 93. */
+}
+
+h1, h2, h3, h4, h5, h6 { /* Refactoring: Structure all the headings like this that have similiar styles instead of different headings and writing the same style multiple times. This is good for customizing individual headings.  Video 93. */
+  font-family: "montserrat-bold"; /* The text is not coming out bold. Might be the font type problem. */
+}
+
+p { /* This is targeting the paragraph element in the feature section of the html page. Video 82 */
+  color: #8f8f8f; /* Making the text grey so the bold letters on top can stand out more. Video 82 */
+}
+
+
+/* Heading */
+
+/* I'm doing this for refactoring purposes. There were to many h1 elements, this is a better way of structuring the headings. Video 93. */
+.big-heading {
+  font-family: 'Montserrat', sans-serif; /* Lines 35, 36, and 37 was moved here from the h1 heading for refactoring purposes, because these styles are spedific to the main heading in the title section on the html page and the website. Video 93. */
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading { /* This is targeting the the class called, section-heading in the pricing section on the html page due to refactoring. Video 93. */
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+
+/* Title Section */
+
+/* Suppose to delete the below but I left it for learning purposes. */
+/* #title { */ /* This is for the navbar section. */
+/* I moved the background-color: #ff4c68; and the text color: #fff; from here to the colored-section class for refactoring purposes. Video 95. */
+/* text-align: left; */ /* This is shifting the title text to the left on the website. Video 93. */
+/* I commented out and moved the text-align: left; to the "#title .container-fluid" hierarchical selector below because I no longer need this section. Video 95. */
+/* } */
+
+#title .container-fluid { /* Refactoring, By writting #title .container-fluid" this is targeting the "id title" in the section element under the body tag on the html page. Which is the title part of the web page where the navbar is. Video 93. */
+  padding: 3% 15% 7%; /* This took away some padding in the title section where the navbar and the text is due to refactoring. Video 93. */
+  text-align: left; /* This is shifting the title text to the left on the website. Video 93. */ /* moved here Video 95. */
+}
+
+.container-fluid { /* For the cellphone image. */
+  padding: 7% 15%; /* top & bottom, Left & Right so the cellphone image can show a little more and the buttons aren't so close to the feature section. */
+} /* Refactoring, she added more "container-fluid" classes to the "features" section on the html page by using a div, the "carousel" in the testimonial section on the html page, the "call to action" section on the html page by adding a div, and the "footer" section on the html page by putting it inside a div. All this was done because of the repeating of padding. Video 93. */
+
+
+/* Sections */
+
+.colored-section { /* This is targeting all the section elements with the class called colored-section. Video 95. */
+  background-color: #ff4c68; /* The Color of background. */
+  color: #fff; /* The Color of the text. */
+}
+
+.white-section { /* This is targeting all the section elements with the class called white-section. Video 95. */
+  background-color: #fff; /* This was put here due to refactoring, video 95. */ /* This helping to cover the cellphone image. I'm using a background color because by default the background might already look white but in actualality it is clear. video 88. */
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+  padding: 0 0 4.5rem;  /* Use "padding-bottom" if you only want to affect to bottom. */
+} /* This was changed to just "padding" to get rid of the navbar padding to the top and sides. Video 80. */
+
+ .navbar-brand {
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+} /* This is styling the word tindog on the website only and not the whole navbar. Video 80 */
+
+.nav-item {
+  padding: 0 18px; /* This is pixels, not rem or percentage, to keep the words fix and responsive. Video 80. */
+ } /* This is targeting the "contact pricing and download" in the upper left section of the website */
+
+.nav-link {
+  font-size: 1.2rem; /* why did she use rem. vide 80 or check back to video with fonts in css. */
+  font-family: "montserrat-light";
+}
+
+
+/* Download Bottons */
+
+.download-button {
+  margin: 5% 3% 5% 0; /* She inspected the bottoms with the developer tools and figured out the numbers from there. Video 80. */
+}
+
+
+/* The Image In The Title Section */
+
+/* Making the image 60% of the class of the div that it is in. video 80. */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg); /* "transfor" is a function. Video 80. */
+  position: absolute; /* Can used z-index without setting a position. Video 88. */
+  right: 30%; /* This pushes the cellphone image to the right. Video 88. */
+}
+
+
+/* Features Section. Video 82*/
+
+/* (The section that on the website that says, Easy to you, Elite Clientele, and Guaranteed To Work) */
+#features { /* This is targeting the "id" in the "section" element on the html page */
+/* I moved the background-color styling to the white-section class due to refactoring. Video 95. */
+  position: relative; /* Need this for the z-index. We used relative and not abosolute so other things don't get moved around as well. Video 88. */
+  z-index: 1; /* This is used to stack the feature section over the cellphone image by using a positive 1. */
+}
+
+.feature-title { /* By refactoring, this is targeting all the h3s in the feature part of the html page by the class "feature-title." Video 93. */
+  font-size: 1.5rem;
+}
+
+.feature-box { /* This is targeting the three feature-box class in the divs on the html page. video 82. */
+  padding: 5%; /* This helped make the text on line, to two lines. Video 82 */
+}
+
+.icon { /* This is targeting the icon element by the word icon in the class atribute. Video 82 */
+  color: #ef8172; /* changing the color of the icons. Video 82.  */
+  margin-bottom: 1rem; /* This is creating space between the bottom of the icons and the top of the bold letters. Video 82. */
+}
+
+.icon:hover { /* This is targeting the icon word in the class of the icon element, and attached to it is psuedo state called hover. Video 82 */
+  color: #ff4c68; /* This changes the icon to this color when the mouse hovers over it. */
+}
+
+
+/* Testimonials Video 85. */
+
+#testimonials { /* This is targeting the testimonials id in the section element on the html page */
+  background-color: #ef8172; /* Background color  */ /* fyi, this is not being overrided by the red background in the "colored-section class" because an "id" is more specific than a class. Video 95. */
+  /* The color styling of white was deleted here because it is already yaken care of in the "colored-section class" Video 95. */
+}
+
+.testimonial-text { /* This is targeting the h2 class "testimonial-text" on the index.html page due to refactoring. Video 93. */
+  font-size: 3rem; /* This is for the Text size */
+  Line-height: 1.5; /* This is for the space in-between the line of text. */
+}
+
+.testimonial-image { /* This is targeting the image in the testimonial section on the html page. Video 85. */
+  width: 10%; /* This is making the image smaller */
+  border-radius: 100%; /* THIS MADE THE PICTURE ROUND!!!!!! instead of square. Video 85. */
+  margin: 20px; /* This created more space around the picture */
+}
+
+#press { /* This is targeting the press id in the press section of the html page. This is targeting everything in the press section. Video 85. */
+  background-color: #ef8172;
+  padding-bottom: 3%; /* This allows some space in between the images and the bottom of the background color. */
+}
+
+.press-logo { /* This is targeting the class in the image element in the press section of the html page. Video 85. */
+  width: 10%; /* Making the images take up less of the width. */
+  margin: 20px 20px 50px; /* Top, left & right, and bottom. This puts space in between the each image. video 85 */
+}
+
+
+
+/* Pricing Section */
+
+
+/* This is targeting the pricing section of the Website. Video 87 */
+#pricing {
+padding: 100px; /* This added space between the boarder of website and the content in the pricing section. Video 87. */
+}
+
+.price-text { /* This is targeting the the price-text class in the h2 in the pricing section. Video 93. */
+  font-size: 3.5rem; /* This made the Text bigger and made it 3 lines of text instead of 2. */
+  line-height: 1.5; /* This is for the space in between the lines of text */
+}
+
+.pricing-colume { /* This is targeting the 3 cards. */
+  padding: 3% 2%; /* She used this to put space between the cards and the text above the cards. Video 87. */
+
+}
+
+
+/* CTA section */ /* This is targeting the cta id in the "call for action section" Video 91. */
+
+#cta { /* Deleted section */
+  /* I commented out the background-color: #ff4c68; and the text color: #fff; from here because its being taken care of with the colored-section class. I was suppose to delete it but I left it here for learning purposes. Video 95 */
+  /* background-color: #ff4c68; */ /* This is the color of the background for the bottom section of the website. Video 91. */
+  /* color: #fff; */ /* This is to make the text white. Video 91. */
+}
+.cta-heading { /* This targeting the class in the h3 heading in the "call to action" section on the html page. I'm doing this because I have a h3 heading already that is styled different then this one. video 91. */
+  font-family: 'Montserrat', sans-serif; /* This made the text bold. Video 91. */
+  font-size: 3.5rem; /* This made the text bigger. Video 91. */
+  line-height: 1.5; /* This put space between the two lines of text. Video 91. */
+}
+
+
+/* Footer Section. Video 91. */
+
+.social-icon { /* Targeting the Icons in the footer section on the index.html page. Video 91. */
+  margin: 20px 10px; /* For creating space inbetween the icons. 20 for top & bottom and 10 for left & right. Video 91. */
+}
+
+
+/* This media query is for image in the title section of the website. */
+
+@media (max-width: 1020px) { /* from tablet to mobile size this will apply. Video 89. */
+#title {
+  text-align: center; /* This didn't get deleted due to refactoring because this is when our title goes into mobile mode. This is used in a different case. Vide 93. */
+}
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}

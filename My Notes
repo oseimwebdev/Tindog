@@ -1,0 +1,118 @@
+Find the 'grid' in the bootstrap website - Documentation, Layout, Grid. Video 74.
+
+
+<!-- Making A Grid With Bootstrap -->
+
+Making a grid with bootstrap using the colume (col) class. Video 74.
+The outter <div> is the row on the website that the inner <div>s are split up on.
+You can specify the width of a colume by using a number. If you don't, the website will size them evenly, automatically Vid 74.
+You can only put 12 col going across. The col have a number from 1-12 which determines the amount of space in the row it will
+take up.
+Adding the class="col-md-6" allows the columes to move when on an tablet or phone. The md stands for meddle, tablet size or
+smaller. lg (large) stands for desktop or laptop.
+If I put the col to lg then I have to put the number to 3 if i want four squares going across in a row on the wibsite on a
+desktop or laptop. col-md-4 for tablet if i want 3 square going across, not phone, written in the same class for each inner <div>.
+col-sm-6 is for phone, if i want 2 squares going across.  see Video 74.
+col by itself is automatically divided by the computer going across and unresponsive on table and phone.
+col-6 divids the columes in half and are unresponsive to table and phone.
+If you don't specify any columes it default to 100%.
+
+
+<!-- Targeting The HTML Elments -->
+
+Ex: body {
+
+}
+
+
+<!-- Targeting The class -->
+
+We put a period before the class name. Ex:
+.row {
+
+}
+
+
+<!-- Targeting ID -->
+
+use hashtag and the name of the id. Ex:
+#title {
+
+}
+
+
+<!-- Making The Columes For The Title Part Of The Tindog Website. Video 76. -->
+
+Use the <div> to separate the content I want to make a colume.
+
+
+<!-- Fonts For Website. Video 76. -->
+
+fonts.google.com.
+To add a font from google, pick the font, copy the link unto the <head> section of html page, and then copy the "CSS rules to specify families"
+ to the styles.css page inside the brackets of the html element i'm trying to change.
+
+
+ <-- Bootstrap Containers Video 78-->
+
+ She placed container in a <div>, within a class EX: <div class="container"></div>. This kind of container doesn't take up the intire width of the screen.
+ The 2nd kind of container is, container Fluid EX: <div class="container-fluid"></div>. This takes up the whole wide of the page.
+
+
+<-- Adding A Button With Bootstrap Video 79 -->
+
+How to add a Icon to a botton or just to a website? Copy the cdn link off the fontawesome.com website and paste it in
+<head> section of the html page. Video 79.
+When pasting the icon for the botton, I pasted it with the download botton and not in the element. vide 79.
+
+
+<-- Text Style For The Whole Website. Video 80. -->
+Target the body EX: body {
+
+}
+on the styles.css page
+
+Changing the text color inside the targeted ID on the styles.css is better than changing it with the targeted h1, in case i wanted to add more text later it
+will be written in that style, as apposed to me having to change the style. video 80.
+
+
+<-- <Div>  Video 82. -->
+<div class=""> </div> when putting this div with a class around a heading or paragraph tag, it is so we can style it on the styles.css page.
+divs with colume attributes are suppose to go inside a div with a class named of row.
+EX: <div class="row">
+      <div class="col-lg-4">
+         <h1> </h1>
+
+<--- Carousel With Bootstrap Video 86--->
+- Carousel is when your website has text or images moving like a slideshow.
+- The id is the name of the carousel.
+- How to change the time of the carousel? Video 86. Ex: 5000 = 5 seconds. data-inerval="1000" This is an attribute that goes inside the opening <div> element.
+When typing the attribute, always type data- and than the, name  and than in the perenthesis the default. Video 86.
+- data-ride="false" is for making the carousel manual and not auto.
+- You can substitute the image elements with the h1 for text.
+- There are separate anchor elements for the left and right button. Left is specified as prev and right as next.
+- The anchor tag is what is housing the button and all the other attrubutes written below.
+- carousel-control-prev = is the move left button.
+- "href" is for the name of the carousel, if there is more than one carousel on the website.
+- "role" is the button. This is what changes the anchor element into a button.
+- data-slide="prev" is for move the slide left.
+- <span class="carousel-control-prev-icon" is for the actual left button icon.
+- aria-hidden="true" This goes inside the opening span element, it is for the visually impaired and make sure not to read symbols, just words.
+- carousel-control-next = is the move right button.
+- data-slide="next" is for move the slide right.
+
+
+<-- Bootstrap Pricing Table Video 87.-->
+- Bootstrap has a pricing table that I can copy the code of and use in the example tab.
+- This pricing table is made up of a bootstrap component called "card".
+
+<-- z-index Video 88. -->
+-The zed index allows me to stack something on another.
+-The z-index is used on the styles.css page, in the barkets of something being targeted.
+-The z-index starts at zero. You can use negative and positive numbers.
+-The z-index does nothing without css positioning. Only Relative, absolute, but not static.
+-Positioning can be used to stack things as well. The position that is written last is the one that will be on top in the website.
+
+<-- Media Query Breakpoints. Video 89. -->
+Media query is needed for making websites responsive on tablets and phones. It allows you to specity how you want things to
+look when using a tablet or phone.

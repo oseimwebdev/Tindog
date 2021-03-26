@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> <!-- Font for the title part of the website. Video 76. -->
+
+  <!-- css stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- the line of code above is the bootstrap css from there website -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/e7f60d0a95.js" crossorigin="anonymous"></script> <!-- This is the CDN link for the icon on the botton and any other icons from the website at fontawesome.com. Video 79. -->
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- This line of code above is what's making the toggle menu drop down. Video 73. -->
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title"> <!-- Use anyword word in the "" to target this section on the styles.css page. -->
+  <!-- Refactoring, A class called colored-section above was added to target all the text on the website that has a colored background since the text are all the same color. I put it in the section element because I want to style the text in the whole section. Video 95. -->
+    <div class="container-fluid">
+      <!-- opening div for the container-fluid. Video 78. -->
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Tindog</a> <!-- This is being targeted on the styles.css -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+<!-- The 3 hrefs below are being used to target the ids created on this html page so that when someone click on the contact it takes them to the contacts in the footer section of the website and so on for the rest. Video 91. -->
+              <a class="nav-link" href="#footer">contact</a> <!-- This is being targeted on the styles.css page. This effects the "contact, pricing, and download" on the website -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- All this code above is the code I wrote for the navbar on codeply.com. The Toggle menu is not dropping down like
+    it was on codeply.com because I need to add some javascript right below the link tag above in the <head> section. video 73. -->
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <!-- col=colume, lg=Larg screens like desktop & laptop, and 6=six boxes out of 12 which equals 50% of the screen on Lg screens. Video 76.-->
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1> <!-- The class was added as part of the heading refactoring. Video 93. -->
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <!-- download botton and apple icon. Video 79. We added a custom cladd name to target besides btn. I don't really understand her reason why Video 80.  -->
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> <!-- download botton and icon. Video 79 -->
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup"> <!-- Cellphone picture -->
+        </div>
+      </div>
+
+    </div> <!-- closing div for the container-fluid -->
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features"> <!-- Use anyword word in the "" to target this section on the styles.css page. -->
+  <!-- Refactoring, A class called white-section above was added to target all the text on the website that has a with background since they are the same color. I put it in the section element because I want the style to apply to the text in the whole section. Video 95. -->
+    <div class="container-fluid">
+
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <!-- feature-box is just a name she came up with for the class, and because this is the feature section. Video 82. -->
+        <i class="icon fas fa-check-circle fa-4x"></i> <!-- check cirle icon copied and pasted from the fontawesome wibsite. I added "fa-4x" to make it bigger. fa stands for font awesome. video 82. -->
+        <!-- she came up with the word "icon" in all three of the "icon elements"n so all 3 of them can be targeted at the same time. Video 82. -->
+        <h3 class="feature-title">Easy to use.</h3> <!-- I'm refactoring this by separating the h3 in this feature section from the other h3s in other section so i'm not repeating h3s in the style.css page. I'm giving these h3s all the same class because they are styled the same. Video 93. -->
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i> <!-- bullseye icon. see 1st icon notes for more. -->
+        <h3 class="feature-title">Elite Clientele</h3> <!-- I'm refactoring this by separating the h3 in this feature section from the other h3s in other section so i'm not repeating h3s in the style.css page. I'm giving these h3s all the same class because they are styled the same. Video 93. -->
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon far fa-smile fa-4x"></i> <!-- smilly face icon. See 1st icon notes for more.  -->
+        <h3 class="feature-title">Guaranteed to work.</h3> <!-- I'm refactoring this by separating the h3 in this feature section from the other h3s in other section so i'm not repeating h3s in the style.css page. I'm giving these h3s all the same class because they are styled the same. Video 93. -->
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials"> <!-- This is being targeted on the styles.css page. Video 85. -->
+  <!-- Use anyword word in the "" to target this section on the styles.css page. --> <!-- Refactoring, A class called colored-section above was added to target all the text on the website that has a colored background since the text are all the same color. I put it in the section element because I want to style the text in the whole section. Video 95. -->
+    <!-- Below is the carousel we created on codeply. Video 86.-->
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2> <!-- Due to refactoring we added the class called testimonial-text to separate this h2 from the others, because these are styled the same. Video 93. -->
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile"> <!-- we put a class in this image element so we can target change the image on the styles.css page. Video 85. -->
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2> <!-- Due to refactoring we added the class called testimonial-text to separate this h2 from the others, because these are styled the same. Video 93. -->
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+    <!-- Press -->
+    <!-- This is being targeted on the styles.css page. Video 85. -->
+
+    <!-- She grouped this section with Testimonial section on the website by giving it the same background. -->
+    <section class="colored-section" id="press"> <!-- Use anyword word in the "" to target this section on the styles.css page. -->
+      <!-- Refactoring, A class called colored-section above was added to target all the text on the website that has a colored background since the text are all the same color. I put it in the section element because I want to style the text in the whole section. Video 95. -->
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo"> <!-- The class was add to be targeted on the css page. Video 85. -->
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+      <!-- To apply a class to all 4 image elements without typing and copying and pasting, Just hold down the "option key"
+    click and hold in between img and src and drag down to the last image, and one big courser should appear. Then type. Video 85. -->
+
+    </section>
+
+
+    <!-- Pricing -->
+
+    <section class="white-section" id="pricing"> <!-- Use anyword word in the "" to target this section on the styles.css page. -->
+    <!-- Refactoring, A class called white-section above was added to target all the text on the website that has a with background since they are the same color. I put it in the section element because I want the style to apply to the text in the whole section. Video 95. -->
+      <h2 class="section-heading">A Plan for Every Dog's Needs</h2> <!-- This class which is called section-heading was added for refactoring purposes to separate this h2 which is for the heading of a section, due to its difference in style from the other h2. All other heading-section h2s will have this style. Video 93. -->
+      <p>Simple and affordable price plans for your and your dog.</p>
+
+<!-- Below are the 3 individual cards for the pricing table. Video 87. -->
+   <!-- <div class="card-deck"> --> <!-- This card-deck made the 3 cards line up horizonaly. video 87. --> <!-- we changed the card deck to card row so it can move better with the site for tablet and phone. -->
+<div class="row"> <!-- this is for setting up my 3 cards into rows, with the div colume below. -->
+
+  <div class="pricing-colume col-lg-4 col-md-6"> <!-- col= colume, lg= Large, 4= 4 boxes out of 12 for this card. --> <!-- md= medium, 6= 6 boxes out of 12. -->
+    <div class="card"> <!-- card 1 -->
+      <div class="card-header"> <!-- every card has a header -->
+          <h3>Chihuahua</h3>
+      </div>
+      <div class="card-body"> <!-- every card has a body -->
+        <h2 class="price-text">Free</h2> <!-- We did some refactoring here, to separate these h2 in this pricing section because they have the same style. Video 93. -->
+        <p>5 Matches Per Day</p>
+        <p>10 Messages Per Day</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button> <!-- This is for the "sign-up" button on the website Video 87. -->
+      </div>
+    </div>
+  </div>
+
+ <div class="pricing-colume col-lg-4 col-md-6"> <!-- col= colume, lg= Large, 4= 4 boxes out of 12 for this card. -->
+   <div class="card"> <!-- card 2 -->
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+      <div class="card-body">
+        <h2 class="price-text">$49 / mo</h2> <!-- We did some refactoring here, to separate these h2 in this pricing section because they have the same style. Video 93. -->
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button> <!-- button details in Video 87. -->
+      </div>
+    </div>
+ </div>
+
+ <div class="pricing-culume col-lg-4"> <!-- col= colume, lg= Large, 4= 4 boxes out of 12 for this card. pricing-colume is the name of the class and it's being targeted on the css page. video 87. -->
+   <div class="card"> <!-- card 3 -->
+     <div class="card-header">
+       <h3>Mastiff</h3>
+     </div>
+     <div class="card-body">
+       <h2 class="price-text">$99 / mo</h2> <!-- We did some refactoring here, to separate these h2 in this pricing section because they have the same style. Video 93. -->
+       <p>Pirority Listing</p>
+       <p>Unlimited Matches</p>
+       <p>Unlimited Messages</p>
+       <p>Unlimited App Usage</p>
+       <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button> <!-- button details in Video 87. -->
+     </div>
+   </div>
+ </div>
+
+
+</div>
+
+    </section>
+
+
+
+
+    <!-- Call to Action -->
+
+    <section class="colored-section" id="cta"> <!-- This is being targeted on the style.css page. Video 91. -->
+    <!-- Use anyword word in the "" to target this section on the styles.css page. --> <!-- Refactoring, A class called colored-section above was added to target all the text on the website that has a colored background since the text are all the same color. I put it in the section element because I want to style the text in the whole section. Video 95. -->
+
+    <div class="container-fluid">
+
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3> <!-- Refactoring, She change this to big-heading, but i didn't because its not the same on mine. Video 93. -->
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i>Download</button> <!-- This is where I styled the botton. Video 91. -->
+      <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i>Download</button> <!-- styling the bottn. Video 91. -->
+
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- This is being targeted on the styles.css page. Video 91. -->
+    <footer class="white-section" id="footer"> <!-- Use anyword word in the "" to target this section on the styles.css page. -->
+    <!-- Refactoring, A class called white-section above was added to target all the text on the website that has a with background since they are the same color. I put it in the section element because I want the style to apply to the text in the whole section. Video 95. -->
+    <div class="container-fluid">
+
+      <i class="social-icon fab fa-facebook-f"></i> <!-- I copied and pasted this icon link from fontawesome.com. Same as the other icon links. Social-Icon was added as a class name so it can be targeted on the styles.css page for icon modification. Video 91 -->
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope-square"></i>
+
+    </div>
+
+      <p>© Copyright 2018 TinDog</p>
+
+    </footer>
+
+
+</body>
+
+</html>
